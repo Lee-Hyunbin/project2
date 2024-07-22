@@ -1,0 +1,133 @@
+#header{position: relative ; }
+
+.btn_more a{ display: inline-block; font-size: 1.6rem; padding: 5px 20px; border-radius: 30px; border: 1px solid #000; transition: all 0.5s;} 
+.btn_more a:hover{background: #000; color: #fff; border: 1px solid #000;}
+
+#main{padding: 100px 0 120px;}
+#main .inner{max-width: 100%; }
+
+
+.buy {display: flex; flex-wrap: wrap;}
+
+.buy .prd_tab{display: flex;  gap: 50px; width: 55%;  }
+
+.buy .prd_tab .prd_small{width: 150px; }
+.buy .prd_tab .prd_small li {margin-bottom: 10px; cursor: pointer;}
+.buy .prd_tab .prd_small li.on{border: 1px solid #111;}
+.buy .prd_tab .prd_small img{display: block; width: 100%;}
+
+.buy .prd_tab .prd_big{position: relative;   } 
+.buy .prd_tab .prd_big li:not(:first-child) { transition: opacity 0.5s; opacity: 0; position: absolute; left: 0; top: 0; width: 100%; }
+.buy .prd_tab .prd_big li.active { opacity: 1; }
+.buy .prd_tab .prd_big li img{width: 100%; display: block; }
+
+.buy .prd_buy{width:45%; padding-left: 100px; padding-top: 40px;}
+.buy .prd_buy h2{color: #999; font-size: 1.4rem; font-weight: 400; line-height: 1.2;}
+.buy .prd_buy .prd_name {display: flex; gap: 20px; align-items: center; padding: 5px 0;}
+.buy .prd_buy .prd_name h3{font-size: 4rem; font-weight: 400; font-family: "Noto Sans KR", sans-serif; }
+.buy .prd_buy .prd_name i {font-size: 2.5rem; cursor: pointer;}
+
+.buy .prd_buy .line{height: 1px; width: 100%; background: #ddd; margin: 10px 0 20px;}
+
+.buy .prd_buy .prd_info {display: flex;}
+.buy .prd_buy .prd_info dl{width: 50%; padding-top: 40px; font-family: "Noto Sans KR", sans-serif;}
+.buy .prd_buy .prd_info dl dt{font-size: 2rem; font-weight: 500;}
+.buy .prd_buy .prd_info dl dd{font-size: 1.6rem;}
+.buy .prd_buy .prd_info dl dd select{font-size: 1.6rem; font-family: "Noto Sans KR", sans-serif; border: 1px solid #ddd; padding: 5px;}
+
+.buy .prd_buy button {width: 40%; height: 60px; background: #6B4A40; font-size: 2rem; color: #fff; font-family: "Noto Sans KR", sans-serif; margin: 40px 10px 0 0; cursor: pointer; border: none;}
+
+@media(max-width:1200px){
+    #main{padding: 80px 0;}
+    
+
+    .buy .prd_tab{width: 100%; justify-content: space-between;  height: auto; flex-wrap: wrap; }
+ 
+    .buy .prd_tab .prd_small{display: flex; gap: 20px; width: 100%; justify-content: center; order: 2; }
+    .buy .prd_tab .prd_big{ order: 1; margin: 0 auto; }
+
+    .buy .prd_buy{width: 100%; padding-left: 0; text-align: center; }
+    .buy .prd_buy .prd_name{justify-content: center; padding-left: 20px;}
+   
+ }
+
+ @media(max-width:768px){
+    .btn_more a{font-size: 1.4rem;}
+    .buy .prd_tab{gap: 30px; }
+    .buy .prd_tab .prd_small{ gap: 25px;}
+
+  
+    .buy .prd_buy h2{ font-size: 1.2rem;}
+    .buy .prd_buy .prd_name h3{font-size: 3.8rem;}
+    .buy .prd_buy p{font-size: 1.4rem;}
+    .buy .prd_buy .prd_info dl dt{font-size: 1.8rem;}
+    .buy .prd_buy .prd_info dl dd{font-size: 1.4rem;}
+    .buy .prd_buy .prd_info dl dd select{font-size: 1.4rem;}
+    .buy .prd_buy button {font-size: 1.8rem; width: 38%; height: 50px;}
+ }
+
+ .prd_data {display: flex; flex-wrap: wrap; }
+ .data_tab{font-family: "Noto Sans KR", sans-serif; width: 70%;}
+ 
+ .data_tab .data_list{padding: 180px 0 0 100px; font-size: 2rem; display: flex; gap: 90px; cursor: pointer;}
+ .data_tab .data_list li {padding: 5px 10px;}
+ .data_tab .data_list li.on{font-weight: 500; border-bottom: 5px solid #6B4A40;}
+
+
+ .data_tab .data_txt{position: relative;  height: 320px;}
+ .data_tab .data_txt li { position: absolute; top: -5px; left: 0; background: rgba(107, 74, 64, 0.2); padding: 50px 0 50px 120px; width: 100%; height: 100%;}
+ .data_tab .data_txt li p {padding-bottom: 20px;}
+
+
+.data_img {  width: 30%;  margin: 180px 0 0; position: relative;}
+ .data_img img{display: block; width: 100%;}
+
+ .data_img div > img{position: absolute; top: 210px; left: -20%; width: 72%;}
+
+ @media(max-width:1200px){
+    .data_tab{width: 100%;}
+    .data_tab .data_list{padding: 120px 0 0 0 ;justify-content: center;}
+    .data_tab .data_txt li {padding: 50px 0;  text-align: center;}
+
+    .data_img{margin: 50px 0 0;  width: 100%; display: flex;  }
+    .data_img img {width: 50%;}
+    .data_img div > img{ position: static; width: 100%; }
+ }
+
+ @media(max-width:768px){
+    .data_tab .data_list{font-size: 1.6rem; gap: 0px; justify-content: space-between; padding: 100px 10px 0; }
+    .data_tab .data_list li{padding: 0;}
+    .data_tab .data_txt{height: 280px;}
+    .data_tab .data_txt li{padding: 40px 0; font-size: 1.4rem;}
+    .data_img {flex-wrap: wrap; }
+    .data_img img{width: 100%; padding-bottom: 50px;}
+    .data_img div {width: 100%;}
+    .data_img{margin: 30px 0 0; }
+ }
+
+ .like {padding: 150px 0;}
+ .like .like_txt {display: flex; align-items: flex-end; gap: 30px; padding-bottom: 25px;}
+ .like .like_txt h4{font-size: 3.5rem; }
+
+ .like .like_list{display: flex; justify-content: space-between; gap: 10px;}
+ .like .like_list li a {position: relative; display: block;}
+ .like .like_list li a img{width: 100%; display: block;}
+ .like .like_list li a img:nth-child(2) {position: absolute; left: 0; top: 0; }
+
+ .like .like_list dl{padding: 5px 0 0; font-size: 1.8rem;}
+
+
+
+
+
+
+ @media(max-width:768px){
+
+   .data_img img{padding-bottom: 30px;}
+    .like {padding: 70px 0;}
+    .like .like_txt{gap: 20px; flex-wrap: wrap;}
+    .like .like_txt h4{font-size: 2.8rem; }
+    .like .like_list{flex-wrap: wrap; }
+    .like .like_list li {width: calc( 50% - 10px); padding-bottom: 20px;}
+    .like .like_list dl{font-size: 1.6rem;}
+ }

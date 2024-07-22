@@ -1,0 +1,68 @@
+#header{position: relative ; }
+
+.btn_more{padding-top: 20px;}
+.btn_more a{ display: inline-block; font-size: 1.6rem; padding: 5px 20px; border-radius: 30px; border: 1px solid #000; transition: all 0.5s;} 
+.btn_more a:hover{background: #000; color: #fff; border: 1px solid #000;}
+
+#main{padding: 0 0 120px;}
+#main .inner{max-width: 100%; }
+
+
+.service_bg {position: relative;}
+.service_bg img{width: 100%; object-fit: cover; }
+.service_bg h2{position: absolute; left: 50%; bottom: 50px; transform: translate(-50%); text-align: center; color: #fff; font-size: 6rem; width: 100%; }
+
+
+ .service h3{font-size: 4.5rem; padding: 100px 0 10px; border-bottom: 1px solid #999; margin-bottom: 30px; text-transform: uppercase; font-style: italic;}
+
+ .gift h3, .contact h3{text-align: right;}
+
+.service .service_list {display: flex;}
+.service .service_list .service_img {width: 50%;}
+.service .service_list .service_img img{width: 100%; display: block;}
+
+.service .service_list .service_txt{width: 50%; padding: 8% 50px 0;}
+.service .service_list .service_txt dl dt{text-transform: uppercase; font-size: 3rem; font-weight: 500; padding-bottom: 40px; position: relative;}
+.service .service_list .service_txt dl dd{ font-family: "Noto Sans KR", sans-serif;}
+
+
+.service .service_list .left dl dt::before{content: ''; width: 50px; height: 5px; background: #FFC8B8; position: absolute; top: -5px ; left: 0; }
+
+.service .service_list .right{text-align: right;}
+.service .service_list .right dl dt::before{content: ''; width: 50px; height: 5px; background: #FFC8B8; position: absolute; top: -5px ; right: 0; }
+
+
+.contact h3{margin-bottom: 50px;}
+.contact dl dt{font-size: 3rem; text-transform: uppercase;  padding-bottom: 40px; font-weight: 500; position: relative;}
+.contact dl dt::before{content: ''; width: 50px; height: 5px; background: #FFC8B8; position: absolute; top: -5px ; left: 0;}
+.contact dl dd{font-family: "Noto Sans KR", sans-serif; padding-bottom: 60px;}
+
+
+
+@media(max-width:1200px){
+   .service .service_list .service_txt{ padding: 2% 30px 0; margin: auto 0;}
+   .btn_more{padding-bottom: 20px;}
+ 
+    .service_bg h2{font-size: 5.5rem;}
+    .service h3{padding: 80px 0 10px; font-size: 4rem;}
+    .service .service_list .service_txt dl dt{padding: 0 0 15px;}
+ 
+ }
+ 
+ @media(max-width:768px){
+   .btn_more{padding-bottom:0;}
+   .btn_more a{font-size: 1.4rem;}
+    .service_bg h2{font-size: 4.5rem; bottom: 30px;}
+    .service h3{font-size: 3rem; margin-bottom: 40px; padding: 60px 0 10px;}
+
+    .service .service_list {display: flex; flex-wrap: wrap;}
+.service .service_list .service_img {width: 100%;}
+.service .service_list .service_txt {width: 100%; padding: 30px 0 50px;}
+.service .service_list .service_txt dl dt{padding: 0 0 30px; font-size: 2.8rem;}
+.service .service_list .service_txt dl dd{font-size: 1.4rem;}
+.service .service_list .right{order: 2;}
+
+.contact dl dt{font-size: 2.8rem; padding-bottom: 30px;}
+.contact dl dd{font-size: 1.4rem;}
+ }
+ 

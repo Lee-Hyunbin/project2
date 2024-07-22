@@ -1,0 +1,111 @@
+#header{position: relative ; }
+
+.btn_more a{ display: inline-block; font-size: 1.6rem; padding: 5px 20px; border-radius: 30px; border: 1px solid #000; transition: all 0.5s;} 
+.btn_more a:hover{background: #000; color: #fff; border: 1px solid #000;}
+
+#main{padding: 0 0 150px;}
+#main .inner{max-width: 100%; }
+#main h3 {font-size: 4.5rem;  padding-bottom: 50px; text-transform: uppercase; font-style: italic;}
+
+
+.brand { position: relative; padding: 140px 0;}
+.brand .brand_logo {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%;}
+.brand  img{display: block;  max-width: 100%; margin: 0 auto;  }
+
+
+.about  {background: rgba(107, 74, 64, 0.1); padding: 100px 0 150px; }
+
+.about h3 { padding-bottom: 60px;}
+.about p{width: 65%; font-size: 2.5rem; padding: 0 0 50px ;}
+.about .about_img{padding-bottom: 150px;}
+.about .about_img img{display: block; max-width:  100%;}
+
+.about .about_list{display: flex; gap: 180px; justify-content: end;}
+.about .about_list .tales{width: 23%;}
+.about .about_list .upcycle{width: 23%;}
+
+.about .about_list dl dt{font-size: 3rem; position: relative; padding: 0 0 30px; font-weight: 500;}
+.about .about_list dl dd{ font-family: "Noto Sans KR", sans-serif; padding-bottom: 30px; }
+.about .about_list dl dt::before{content: ''; width: 50px; height: 5px; background: #6B4A40; position: absolute; top: -5px ; left: 0; }
+
+.identity {padding: 100px 0 150px;}
+.identity .inner{display: flex; gap: 55px; justify-content: space-between; }
+
+.identity .bi_txt {width: calc(55% - 55px);}
+
+.identity .bi_txt h3 {padding: 30px 0 60px; }
+
+.identity .bi_txt .mbi_img{display: none;}
+.identity .bi_txt dl dt {font-size: 3rem; font-weight: 500; padding: 50px 0;} 
+.identity .bi_txt dl dt span{color: #6B4A40; font-size: 2.5rem;}
+
+.identity .bi_txt dl dd{font-family: "Noto Sans KR", sans-serif; padding-bottom: 50px; border-bottom: 1px solid #999;}
+
+.identity .bi_img {width: calc(45% - 55px); text-align: right;}
+.identity .bi_img img {max-width: 100%; }
+
+
+
+
+.suggestions h3 {padding-bottom: 60px; text-align: center;}
+.suggestions .sug_list{display: flex; gap: 18%; justify-content: center;}
+.suggestions .sug_list .sug{ text-align: center;}
+.suggestions .sug_list .sug img{display: block; max-width: 100%; width: 100%;}
+
+.suggestions .sug_list {position: relative;}
+.suggestions .sug_list .sug dl{padding: 30px 0; }
+.suggestions .sug_list .sug dl dt{color: #333 ;}
+.suggestions .sug_list .sug dl dd{font-size: 3rem;  font-weight: 500;}
+
+.suggestions .sug_list::after{content: '';  position: absolute; top: 50%; right: 50%; transform: translate(-50%, -50%); width: 1px; height: 550px; background: #999;}
+
+
+@media (max-width:1200px){
+    #main h3{font-size: 4rem;}
+
+    .about .about_list{ gap: 100px; justify-content: center;}
+    .about .about_list .tales{width: 50%;}
+    .about .about_list .upcycle{width: 50%;}
+
+    .identity .inner{display: flex; gap: 35px;  }
+
+    .identity .bi_txt {width: calc(50% - 35px);}
+    .identity .bi_txt dl dt {padding: 30px 0;} 
+    .identity .bi_txt dl dt:first-child{padding-top: 0;}
+    .identity .bi_txt dl dd{padding-bottom: 30px;}
+    .identity .bi_img {width: calc(50% - 35px); }
+    .identity .bi_img img{padding-bottom: 15px;}
+
+    .suggestions .sug_list{display: flex; gap: 15%;}
+    .suggestions .sug_list::after{height: 450px;}
+}
+
+@media (max-width:768px){
+    .btn_more a{font-size: 1.4rem;}
+
+    #main h3{font-size: 3rem; padding-bottom: 30px; text-align: center;}
+    .about  { padding:80px 0 ; }
+    .about p{width: 100%; font-size: 2rem; text-align:justify ; padding: 0 0 50px ;}
+    .about .about_img{padding-bottom: 80px;}
+    .about .about_list{flex-wrap: wrap; gap: 0;}
+    .about .about_list .tales{width: 100%; padding-bottom: 80px; }
+    .about .about_list .upcycle{width: 100%;}
+    .about .about_list dl dt{font-size: 2.8rem;}
+    .about .about_list dl dd{font-size: 1.4rem; padding-bottom: 20px;}
+
+    .identity {padding: 80px 0;}
+   
+    .identity .bi_txt {width: 100%;}
+    .identity .bi_txt h3{padding-top: 0; }
+    .identity .bi_txt .mbi_img{display: block;}
+    .identity .bi_txt .mbi_img img{max-width: 100%;}
+    .suggestions .sug_list .sug dl{padding: 30px 0 20px; }
+    .identity .bi_txt dl dt {font-size: 2.8rem; padding: 20px 0 30px;} 
+    .identity .bi_txt dl dd{font-size: 1.4rem; }
+    .identity .bi_img {display: none;}
+
+    .suggestions .sug_list{display: flex; flex-wrap: wrap; gap: 80px;}
+    .suggestions .sug_list .sug dl dt{font-size: 1.4rem;}
+    .suggestions .sug_list .sug dl dd{font-size: 2.8rem;}
+    .suggestions .sug_list::after{display: none;}
+}
